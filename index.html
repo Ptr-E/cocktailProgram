@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Charge Calculation</title>
+	
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+	
+	<!-- FONTS -->
+	<link href='https://fonts.googleapis.com/css?family=Averia+Libre:400,700' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Acme' rel='stylesheet' type='text/css'>
+
+
+</head>
+<body>
+
+<header>
+	<h1>How much you should charge for your cocktail you ask?</h1>
+		<h3>Its as easy as 1, 2, 3... & 4! Get a price for your cocktail plus some other usefull info at the end!</h3>
+</header>
+
+	<div class="input">
+		<div class="col-1-4">
+			<p>First!<br> Select the size of the liquor bottle.</p>
+		</div>
+		<div class="col-1-4">
+			<p>Next<br> enter the cost (its printed on the invoice) of the liquor bottle.</p>
+		</div>
+			
+		<div class="col-1-4">
+			<p>Then <br> we enter in the amount the the cocktail is calling for in ounces.</p>
+		</div>
+		<div class="col-1-4">
+			<p >Finally, select a target beverage cost that you want to have <br>with this partiular cocktail<br>(Generally you will be between 20 and 30%, depending on your establishment and clientele!)</p>
+		</div>
+			
+	</div>
+	<div id="data">
+			<div class="col-1-4">
+				<select id="bottleSize">
+				  <option value="750">750mL</option>
+				  <option value="1000">1000mL</option>
+				  <option value="1500">1500mL</option>
+				</select>
+			</div>
+	
+			<div class="col-1-4">
+				<form>
+					<input type="text" id="bottleCost" placeholder="Bottle Cost $ XX.XX" required>
+				</form>
+			</div>	
+			<div class="col-1-4">
+				<form>
+					<input type="text" id="pourAmount" placeholder="Pour Amount in Ounces" required>
+				</form>
+			</div>	
+			<div class="col-1-4">
+				<form>
+					<input type="text" id="bevCost" placeholder="Desired Beverage Cost %:" required>
+				</form>
+			</div>
+
+	</div>
+		<form>
+			<i class="fa fa-calculator fa-3x" onclick="cocktail()">Click ME!</i>
+		</form>
+		<br>
+	<div id="charge"><i class="fa fa-glass fa-2x"></i></div><br>
+	<div id="totalGross"><i class="fa fa-money fa-2x"></i></div><br>
+	<div id="numDrinks"><i class="fa fa-thumbs-o-up fa-2x"></i></div>
+
+</body>
+
+
+
+<!-- Javascript -->
+	<script src="js/main.js"></script>
+</html>

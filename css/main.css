@@ -1,0 +1,101 @@
+
+body {
+	height: 900px;
+	width: 100%;
+	background: #e5e5e5;
+	color: #000;
+	margin: 0px 0px 0px 0px;
+	padding: 0px 10px 0px 10px;
+}
+
+/*HEADER*/
+
+header {
+	font-family: 'Averia Libre', cursive;
+	font-weight: 400;
+	width: 100%;
+	height: 350px;
+	background-image: url("../assets/bottles.jpg");
+}
+
+header > h1 {
+	padding: 0px 20px;
+	margin-top: 0;
+	text-align: center;
+	font-size: 3.5em;
+}
+
+header > h3, h5 {
+	text-align: center;
+	display: inline-block;
+	width: 100%;
+	font-size:2.5em;
+}
+
+/*INPUT*/
+
+select,input {
+	vertical-align: middle;
+	/*margin:25% 25%;*/
+}
+
+input {
+	margin-left:0;
+	font-size: 18px;
+	padding: 10px 10px 10px 10px;
+}
+
+#bottleSize {
+	background-color: blue;
+	color: white;
+	padding: 20px 20px;
+	font-size: 33px;
+
+}
+
+div.input {
+	width: 100%;
+	height:px;
+	text-align: center;
+	vertical-align: middle;
+	font-family: 'Acme', serif;
+	font-size: 1.2em;
+	text-decoration: bold;
+}
+div#data {
+	text-align: center;
+}
+.col-1-4 {
+	vertical-align: top;
+	display: inline-table;
+	width: 23%;	
+	height: 50px;
+	margin: auto;
+}
+
+p, form {
+	text-align:center;
+}
+
+i.fa.fa-calculator {
+	border: 2px solid #000;
+	text-align: center;
+
+	width: 300px;
+	padding: 10px 0px 10px 0px;
+	margin: 50px auto;
+	margin-bottom: 60px;
+}
+i.fa:hover {
+	cursor: pointer;
+}
+
+#charge,
+#totalGross,
+#totalNet,
+#numDrinks {
+	text-align: center;
+	font-family: 'Averia Libre', cursive;
+	font-weight: 400;
+	font-size: 2em;	 
+}
